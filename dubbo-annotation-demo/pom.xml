@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.qqxhb</groupId>
+		<artifactId>dubbo-demo</artifactId>
+		<version>0.0.1</version>
+	</parent>
+	<artifactId>dubbo-annotation-demo</artifactId>
+	<packaging>pom</packaging>
+	<name>dubbo-annotation-demo</name>
+
+	<dependencies>
+		<!-- 引入Dubbo依赖 -->
+		<dependency>
+			<groupId>org.apache.dubbo</groupId>
+			<artifactId>dubbo</artifactId>
+		</dependency>
+		<!-- 使用zookeeper作为注册中心 -->
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+		</dependency>
+		<!-- 使用curator作为zookeeper客户端 -->
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+		</dependency>
+		<!-- 引入需要暴露的服务 -->
+		<dependency>
+			<groupId>com.qqxhb</groupId>
+			<artifactId>dubbo-demo-api</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+	<modules>
+		<module>dubbo-annotation-demo-consumer</module>
+		<module>ddubbo-annotation-demo-provider</module>
+	</modules>
+</project>
