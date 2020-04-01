@@ -13,7 +13,7 @@
 	<!-- 服务暴露的协议 -->
     <dubbo:protocol name="dubbo"/>
 	<!-- 定义Bean -->
-    <bean id="helloService" class="com.qqxhb.xml.provider.HelloServiceImpl"/>
+    <bean id="helloService" class="com.qqxhb.xml.provider.impl.HelloServiceImpl"/>
 	<!-- 暴露服务 -->
     <dubbo:service interface="com.qqxhb.demo.api.HelloService" ref="helloService"/>
 
