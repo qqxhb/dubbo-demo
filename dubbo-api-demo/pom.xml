@@ -14,7 +14,7 @@
 	<name>dubbo-api-demo</name>
 
 	<dependencies>
-		<!-- 引入Dubbo依赖 -->
+		<!-- 引入Dubbo依赖，原生api不需要依赖spring -->
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo</artifactId>
